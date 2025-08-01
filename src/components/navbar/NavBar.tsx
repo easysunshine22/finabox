@@ -101,9 +101,9 @@ export default function NavBar() {
           </div>
 
           {/* Mobile Menu Toggle */}
-          <FadeIn direction="left" delay={0.6} duration={0.5} className="block md:hidden">
+          <FadeIn direction="left" delay={0.6} duration={0.5} className="block md:hidden !pb-0 !mb-0">
             <HoverCard hoverScale={1.1}>
-              <Button className="p-0 bg-transparent border-none" onClick={toggleMobileMenu}>
+              <Button className="!p-0 bg-transparent border-none" onClick={toggleMobileMenu}>
                 <Image src={isMobileMenuOpen ? hamburgerClose : hamburgerOpen} width={40} height={40} className="w-[40px] h-[40px]" alt={isMobileMenuOpen ? 'Menu close icon' : 'Menu open icon'} />
               </Button>
             </HoverCard>

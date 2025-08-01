@@ -29,7 +29,7 @@ export default function Footer() {
   const otherLinks = ['Contact', 'Terms & Conditions'];
 
   return (
-    <FadeIn direction="up" distance={40} duration={0.8} className="footerBgImg px-8 py-[85px] flex items-center justify-center w-full">
+    <FadeIn direction="up" distance={40} duration={0.8} className="footerBgImg px-8 py-[42px] sm:py-[85px] flex items-center justify-center w-full">
       <div className="w-[1408px] p-[32px] gap-[64px] bg-[#111111] border border-white/8 rounded-[32px]">
         <div className="flex flex-col md:flex-row justify-between pb-6 gap-16 md:gap-0">
           {/* Logo and Social */}
