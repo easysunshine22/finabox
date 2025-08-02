@@ -11,7 +11,7 @@ export const siteMetadata: Metadata = {
   openGraph: {
     title: 'Finabox - Smart, Secure Inbox for Your Money',
     description: 'Cut SMS costs and deliver instant transaction messages. Built for banks with secure delivery and real-time dispute actions.',
-    url: 'https://finabox.com',
+    url: 'https://finabox.vercel.app',
     siteName: 'Finabox',
     images: [
       {
@@ -32,7 +32,7 @@ export const siteMetadata: Metadata = {
     creator: '@finabox',
   },
   alternates: {
-    canonical: 'https://finabox.com',
+    canonical: 'https://finabox.vercel.app',
   },
   verification: {
     google: 'your-google-verification-code',

@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "SoftwareApplication",
     "name": "Finabox",
     "description": "Smart, secure inbox for financial transaction messages. Cut SMS costs and deliver instant alerts with built-in dispute tools.",
-    "url": "https://finabox.com",
+    "url": "https://finabox.vercel.app",
     "applicationCategory": "FinanceApplication",
     "operatingSystem": "Web, iOS, Android",
     "offers": {
@@ -21,7 +21,7 @@ export default function StructuredData() {
     "author": {
       "@type": "Organization",
       "name": "Finabox",
-      "url": "https://finabox.com"
+      "url": "https://finabox.vercel.app"
     }
   };
 
