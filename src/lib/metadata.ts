@@ -38,6 +38,6 @@ export const siteMetadata: Metadata = {
     canonical: 'https://finabox.com.ng',
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'p3g-tQF24T8Cxh-KeXKenIEbSgc-1oGunTQXi2UAP5g',
   },
 };

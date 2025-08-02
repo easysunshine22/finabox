@@ -63,7 +63,7 @@ export default function WhyUsSection() {
             duration={0.8}
             className="flex-1 overflow-hidden relative min-h-[376px] sm:min-h-[450px] md:min-h-[800px] xl:min-h-[400px] aspect-w-16 aspect-h-9 xl:aspect-none"
           >
-            <HoverCard hoverScale={1.01} className="w-full h-full xl:relative xl:-right-9">
+            <HoverCard hoverScale={1.01} className="w-full h-full xl:relative xl:-right-5">
               <Image src={whyUsImg} alt="Why Us" fill className="object-cover w-full h-full rounded-lg transition-transform duration-500 hover:scale-[1.01]" priority />
             </HoverCard>
           </FadeIn>
