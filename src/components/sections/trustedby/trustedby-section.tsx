@@ -28,8 +28,8 @@ export default function TrustedBySection() {
   ];
 
   return (
-    <FadeIn direction="up" distance={20} duration={0.6} className="px-8 w-full flex items-center justify-center overflow-hidden">
-      <div className="w-[1280px] pt-[24px] pb-[40px] sm:pb-[80px]">
+    <FadeIn direction="up" distance={20} duration={0.6} className="px-8 md:py-[64px] py-[83px] w-full flex items-center justify-center overflow-hidden">
+      <div className="container">
         <FadeIn direction="up" delay={0.2} duration={0.5}>
           <h3 className="font-[400] text-center text-[16px] leading-[100%] text-white mb-12">Trusted by top-tier banks and fintechs</h3>
         </FadeIn>
@@ -37,7 +37,7 @@ export default function TrustedBySection() {
         {/* Container with hidden overflow */}
         <div className="relative w-full overflow-hidden">
           {/* Animated logos container */}
-          <div className="flex items-center gap-[32px] sm:gap-[100px] animate-scroll">
+          <div className="flex items-center gap-[20px] md:gap-[32px] lg:gap-[50px] 2xl:gap-[100px] animate-scroll">
             {/* First set of logos */}
             {logos.map((logo, index) => (
               <HoverCard key={`first-${index}`} hoverScale={1.1}>
@@ -45,7 +45,7 @@ export default function TrustedBySection() {
                   src={logo.src}
                   width={56}
                   height={56}
-                  className="w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0"
+                  className="w-[40px] h-[40px] 2xl:w-[56px] 2xl:h-[56px] filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0"
                   alt={logo.alt}
                   priority
                 />
@@ -59,7 +59,7 @@ export default function TrustedBySection() {
                   src={logo.src}
                   width={56}
                   height={56}
-                  className="w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0"
+                  className="w-[40px] h-[40px] 2xl:w-[56px] 2xl:h-[56px] object-contain filter grayscale hover:grayscale-0 transition-all duration-300 flex-shrink-0"
                   alt={logo.alt}
                   priority
                 />

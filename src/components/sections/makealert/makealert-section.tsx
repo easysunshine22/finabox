@@ -12,13 +12,9 @@ import FadeIn from '@/components/animations/fade-in';
 export default function MakeAlertSection() {
   return (
     <FadeIn direction="up" distance={30} duration={0.7} className="px-8 py-[42px] sm:py-[85px] w-full flex items-center justify-center">
-      <div className="w-[842.66px] flex flex-col">
-        <div className="flex items justify-center">
-          <FadeIn direction="right" delay={0.3} duration={0.8} className="flex-1 flex items-center justify-center relative min-h-[300px] sm:min-h-[450px] md:min-h-[600px] xl:min-h-[562px]">
-            <HoverCard hoverScale={1.01} className="w-full h-full">
-              <Image src={makeAlertImg} alt="Make Alert" fill className="object-cover w-full h-full rounded-lg transition-transform duration-500 hover:scale-[1.01]" priority />
-            </HoverCard>
-          </FadeIn>
+      <div className="w-[842.66px] flex flex-col items-center justify-center">
+        <div className="max-w-[310px] lg:max-w-[550px] 2xl:max-w-[750px]">
+          <Image width={672} height={672} src={makeAlertImg} alt="make alert" className="w-full h-auto object-cover transition-transform duration-500 hover:scale-[1.01]" />
         </div>
 
         <StaggeredFadeIn direction="up" staggerDelay={0.15} initialDelay={0.4} className="max-w-[592px] mx-auto flex flex-col">

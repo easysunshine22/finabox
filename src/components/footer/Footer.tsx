@@ -29,25 +29,25 @@ export default function Footer() {
   const otherLinks = ['Contact', 'Terms & Conditions'];
 
   return (
-    <FadeIn direction="up" distance={40} duration={0.8} className="footerBgImg px-8 py-[42px] sm:py-[85px] flex items-center justify-center w-full">
+    <FadeIn direction="up" distance={40} duration={0.8} className="footerBgImg px-8 py-[85px] flex items-center justify-center w-full">
       <div className="w-[1408px] p-[32px] gap-[64px] bg-[#111111] border border-white/8 rounded-[32px]">
-        <div className="flex flex-col md:flex-row justify-between pb-6 gap-16 md:gap-0">
+        <div className="flex flex-col lg:flex-row justify-between pb-6 gap-16">
           {/* Logo and Social */}
-          <FadeIn direction="right" delay={0.2} duration={0.6} className="w-full sm:w-[232px] flex flex-col gap-4">
+          <FadeIn direction="right" delay={0.2} duration={0.6} className="w-full lg:w-[232px] flex flex-col gap-4">
             <div className="flex items-center gap-3">
               <HoverCard hoverScale={1.05}>
                 <Image
                   src={footerLogo}
                   width={56}
                   height={56}
-                  className="w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] transition-transform duration-300 hover:rotate-[10deg]"
+                  className="w-[40px] lg:w-[56px] h-[40px] lg:h-[56px] transition-transform duration-300 hover:rotate-[10deg]"
                   alt="Finabox logo"
                   priority
                 />
               </HoverCard>
-              <span className="font-bold text-xl sm:text-[28px] leading-[100%] transition-colors duration-300">Finabox</span>
+              <span className="font-bold text-xl lg:text-[28px] leading-[100%] transition-colors duration-300">Finabox</span>
             </div>
-            <p className="text-white/50 max-w-full sm:max-w-[192px] text-sm font-normal leading-[21px] hover:text-white/70 transition-colors duration-300">
+            <p className="text-white/50 max-w-full lg:max-w-[192px] text-sm font-normal leading-[21px] hover:text-white/70 transition-colors duration-300">
               The cost efficient smart and secure inbox built for your money
             </p>
             <div className="flex gap-4">
@@ -66,7 +66,7 @@ export default function Footer() {
           {/* Links */}
           <StaggeredFadeIn direction="up" staggerDelay={0.1} initialDelay={0.4} className="flex flex-col md:flex-row gap-8 md:gap-16">
             {/* Quick Links */}
-            <div className="w-full sm:w-[109px] flex flex-col gap-8">
+            <div className="w-full lg:w-[109px] flex flex-col gap-8">
               <h4 className="text-white text-base font-medium hover:text-white/70 transition-colors duration-300">Quick Links</h4>
               <div className="flex flex-col gap-5">
                 {quickLinks.map((link, index) => (
@@ -95,11 +95,11 @@ export default function Footer() {
           </StaggeredFadeIn>
 
           {/* App Buttons */}
-          <FadeIn direction="left" delay={0.4} duration={0.6} className="w-full sm:w-[278px] flex flex-col gap-8">
+          <FadeIn direction="left" delay={0.4} duration={0.6} className="w-full lg:w-[278px] flex flex-col gap-8">
             <p className="text-white text-base font-medium hover:text-white/70 transition-colors duration-300">Begin to monitoring your transaction without extra cost</p>
             <div className="w-full flex flex-col gap-[13px]">
               <HoverCard hoverScale={1.03} hoverElevation>
-                <Button variant="customWithGradient" className="w-full sm:w-[210px] gap-3 transition-all duration-300 hover:shadow-[0_0_15px_rgba(137,33,255,0.3)]">
+                <Button variant="customWithGradient" className="w-full lg:w-[210px] gap-3 transition-all duration-300 hover:shadow-[0_0_15px_rgba(137,33,255,0.3)]">
                   <Image src={PlayStoreIcon} alt="Play store" width={24} height={24} className="w-6 h-6 transition-transform duration-300 hover:scale-110" />
                   Play store
                 </Button>
@@ -107,7 +107,7 @@ export default function Footer() {
               <HoverCard hoverScale={1.03} hoverElevation>
                 <Button
                   variant="customWithGradient"
-                  className="w-full sm:w-[210px] bg-white text-black gap-3 hover:bg-gray-100 transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
+                  className="w-full lg:w-[210px] bg-white text-black gap-3 hover:bg-gray-100 transition-all duration-300 hover:shadow-[0_0_15px_rgba(255,255,255,0.2)]"
                 >
                   <Image src={AppleStoreIcon} alt="App store" width={24} height={24} className="w-6 h-6 transition-transform duration-300 hover:scale-110" />
                   App store
@@ -118,7 +118,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright and Back to Top */}
-        <FadeIn direction="up" delay={0.8} duration={0.5} className="flex flex-col sm:flex-row sm:items-center justify-between gap-8">
+        <FadeIn direction="up" delay={0.8} duration={0.5} className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
           <p className="text-white text-base font-normal hover:text-white/70 transition-colors duration-300">
             <span className="text-white/50">Copyright ©</span> Finabox 2025
           </p>

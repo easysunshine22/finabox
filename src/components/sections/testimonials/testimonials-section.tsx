@@ -48,8 +48,8 @@ const testimonys: TestimoniaCard[] = [
 
 export default function TestimonialsSection() {
   return (
-    <FadeIn direction="up" distance={40} duration={0.8} className="px-8 py-[42px] sm:py-[85px] w-full flex items-center justify-center">
-      <div className="w-[1408px] flex items-center justify-center flex-col gap-[64px]">
+    <FadeIn direction="up" distance={40} duration={0.8} className="px-8 py-[64px] sm:py-[83px] w-full flex items-center justify-center">
+      <div className="container flex items-center justify-center flex-col gap-[64px]">
         <StaggeredFadeIn direction="up" staggerDelay={0.1} initialDelay={0.2} className="w-full flex flex-col items-center justify-center gap-[23.09px]">
           <Badge variant="customBadgeStyle">Testimonials</Badge>
           <h1 className="titleStyle text-center">
@@ -62,25 +62,24 @@ export default function TestimonialsSection() {
           {testimonys.map((testimony, index) => (
             <FadeIn key={index} direction="up" delay={0.3 + index * 0.15} distance={30} duration={0.6}>
               <HoverCard hoverScale={1.01} hoverElevation className="h-full">
-                <Card className="p-[30px] border-[#FFFFFF3D] bg-[#111111] rounded-[32px] flex flex-col gap-[32px] justify-between h-full hover:border-[#FFFFFF66] transition-all duration-300 group">
+                <Card className="p-[35px] lg:py-[25px] lg:px-[30px] 2xl:px-[41px] 2xl:py-[41px] gap-[32px] lg:gap-[25px] 2xl:gap-[32px] border-[#FFFFFF3D] bg-[#111111] rounded-[32px] lg:rounded-[20px] 2xl:rounded-[32px] flex flex-col justify-between h-full group hover:border-[#FFFFFF66] transition-colors duration-300">
                   <CardHeader className="gap-[23.09px] p-0">
-                    <div className="relative w-12 h-12">
-                      <Image src={testimony.icon} alt={`${testimony.title} icon`} fill className="transition-all duration-500 group-hover:scale-110 group-hover:opacity-90" />
-                    </div>
-                    <CardTitle className="text-[24px] sm:text-[32px] font-medium text-white leading-[45px] transition-colors duration-300">{testimony.title}</CardTitle>
-                    <CardDescription className="text-[#FFFFFF80] italic font-normal text-base leading-[25px] transition-all duration-300 group-hover:text-[#FFFFFFB0] group-hover:translate-x-1">
+                    <Image src={testimony.icon} width={48} height={48} alt={`${testimony.title} icon`} className="w-12 h-12 lg:w-[33px] lg:h-[33px] 2xl:w-12 2xl:h-12 transition-transform duration-500 hover:scale-110" />
+
+                    <CardTitle className="text-[24px] lg:text-[20px] 2xl:text-[32px] font-medium text-white leading-[100%] transition-colors duration-300">{testimony.title}</CardTitle>
+                    <CardDescription className="text-[#FFFFFF80] italic font-[400] text-base lg:text-[11px] 2xl:text-[16px] leading-normal transition-colors duration-300 group-hover:text-[#FFFFFFA0]">
                       {testimony.msg}
                     </CardDescription>
                   </CardHeader>
 
                   <CardContent className="p-0 w-full">
                     <div className="flex items-center gap-4 w-full group-hover:translate-x-1 transition-transform duration-300">
-                      <div className="relative w-14 h-14 rounded-full transition-all duration-300 overflow-hidden">
-                        <Image src={testimony.avatar} alt={`${testimony.name} avatar`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                      <div className="relative w-14 h-14 lg:w-10 lg:h-10 2xl:w-14 2xl:h-14 rounded-full transition-all duration-300 overflow-hidden">
+                        <Image src={testimony.avatar} width={56} height={56} alt={`${testimony.name} avatar`} className="object-cover group-hover:scale-105 transition-transform duration-500" />
                       </div>
                       <div className="flex flex-col">
-                        <span className="text-white font-normal text-base transition-colors duration-300">{testimony.name}</span>
-                        <span className="text-[#FFFFFF60] font-normal text-sm group-hover:text-[#FFFFFF90] transition-colors duration-300">{testimony.role}</span>
+                        <span className="text-white font-normal text-[16px] lg:text-[12px] 2xl:text-[16px] transition-colors duration-300">{testimony.name}</span>
+                        <span className="text-[#FFFFFF60] font-normal text-sm lg:text-[10px] 2xl:text-sm group-hover:text-[#FFFFFF90] transition-colors duration-300">{testimony.role}</span>
                       </div>
                     </div>
                   </CardContent>

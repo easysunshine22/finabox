@@ -121,13 +121,21 @@
   }
 }
 
+.container{
+  @apply w-[100%] xl:w-[77%] max-w-[1408px] flex flex-col
+}
+
 .gradientTextColor {
-  @apply bg-gradient-to-r from-[#5021FF] to-[#8921FF] bg-clip-text text-transparent
+  @apply bg-gradient-to-r from-[#8921FF] to-[#5021FF] bg-clip-text text-transparent
 }
 
 .titleStyle{
-  @apply font-medium text-[52px] leading-[64px] sm:text-[56px] sm:leading-[64px] md:text-[72px] md:leading-[96px] lg:text-[96px] lg:leading-[128px]
+  @apply font-[500] text-[52px] lg:text-[60px] 2xl:text-[96px] leading-[64px] sm:leading-[64px] lg:leading-[1.2] 2xl:leading-[128px]
 }
+
+/* .titleStyle{
+  @apply font-medium text-[52px] leading-[64px] md:text-[56px] sm:leading-[64px] lg:text-[72px] lg:leading-[96px] 2xl:text-[96px] 2xl:leading-[128px]
+} */
 
 .gradientBgColor {
   @apply bg-gradient-to-r from-[#5021FF] to-[#8921FF] hover:from-[#5a2aff] hover:to-[#9321FF] transition-all duration-300
