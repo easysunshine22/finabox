@@ -55,19 +55,19 @@ export default function FaqAccordion() {
           <FadeIn key={item.id} direction="up" delay={0.3 + index * 0.1} distance={30} duration={0.6}>
             <HoverCard hoverScale={1.01} hoverElevation>
               <AccordionItem value={item.id} className="flex flex-col gap-[24px] lg:gap-[20px] 2xl:gap-[24px] border border-white/24 pb-[25px] lg:pb-[25px] 2xl:pb-[25px] rounded-[32px] lg:rounded-[25px] 2xl:rounded-[32px] bg-[#111111] group">
-                <AccordionTrigger className="text-left cursor-pointer hover:no-underline transition-colors p-[33px] pb-0 lg:p-[25px] lg:pb-0 2xl:p-[33px] 2xl:pb-0 [&>svg]:hidden">
+                <AccordionTrigger className="text-left cursor-pointer hover:no-underline transition-colors p-[20px] pb-0 xs:p-[33px] xs:pb-0 sm:p-[33px] sm:pb-0 lg:p-[25px] lg:pb-0 2xl:p-[33px] 2xl:pb-0 [&>svg]:hidden">
                   <div className="flex sm:items-center gap-3 w-full">
-                    <FadeIn direction="right" delay={0.4 + index * 0.1} duration={0.4} className="gradientBgColor flex items-center justify-center text-[24px] lg:text-[20px] 2xl:text-[24px text-white w-10 h-10 lg:w-7 lg:h-7 2xl:w-10 2xl:h-10 rounded-full">
+                    <FadeIn direction="right" delay={0.4 + index * 0.1} duration={0.4} className="gradientBgColor flex items-center justify-center xs:text-[18px] sm:text-[24px] lg:text-[20px] 2xl:text-[24px text-white w-8 h-8 xs:w-10 xs:h-10 sm:w-10 sm:h-10 lg:w-7 lg:h-7 2xl:w-10 2xl:h-10 rounded-full">
                       {index + 1}
                     </FadeIn>
-                    <span className="text-white text-lg lg:text-sm 2xl:text-xl font-normal flex-1 transition-colors duration-300">{item.title}</span>
-                    <div className="flex items-center justify-center w-10 h-10 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10 border border-white/24 bg-white/8 text-white rounded-[10px] lg:rounded-[8px] 2xl:rounded-[10px] text-sm font-bold transition-all duration-300">
+                    <span className="text-white text-sm xs:text-lg sm:text-lg lg:text-sm 2xl:text-xl font-normal flex-1 transition-colors duration-300">{item.title}</span>
+                    <div className="flex items-center justify-center w-8 h-8 xs:w-10 xs:h-10 sm:w-10 sm:h-10 lg:w-8 lg:h-8 2xl:w-10 2xl:h-10 border border-white/24 bg-white/8 text-white rounded-[10px] lg:rounded-[8px] 2xl:rounded-[10px] text-sm font-bold transition-all duration-300">
                       <FaPlus className="group-data-[state=open]:hidden" />
                       <FaMinus className="hidden group-data-[state=open]:inline" />
                     </div>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="text-white/50 text-[16px] lg:text-[12px] 2xl:text-[16px] font-normal px-[33px] lg:px-[25px] 2xl:px-[33px] pb-0 group-hover:text-white/70 transition-colors duration-300">{item.content}</AccordionContent>
+                <AccordionContent className="text-white/50 text-[16px] lg:text-[12px] 2xl:text-[16px] font-normal px-[20px] xs:px-[33px] sm:px-[33px] lg:px-[25px] 2xl:px-[33px] pb-0 group-hover:text-white/70 transition-colors duration-300">{item.content}</AccordionContent>
               </AccordionItem>
             </HoverCard>
           </FadeIn>

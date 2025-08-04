@@ -22,14 +22,14 @@ export default function PricingSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-[100%] lg:w-[625px] 2xl:w-[100%]">
           {pricingData.plans.map((plan, index) => (
             <HoverCard key={index} className="relative">
-              <Card className="p-[33px] lg:p-[23px] 2xl:p-[33px] border-[#FFFFFF3D] bg-[#111111] rounded-[32px] flex flex-col justify-between gap-10 lg:gap-6 2xl:gap-10 h-full hover:border-[#FFFFFF66] transition-colors duration-300">
+              <Card className="p-[20px] xs:p-[33px] lg:p-[23px] 2xl:p-[33px] border-[#FFFFFF3D] bg-[#111111] rounded-[32px] flex flex-col justify-between gap-10 lg:gap-6 2xl:gap-10 h-full hover:border-[#FFFFFF66] transition-colors duration-300">
                 <CardHeader className="p-0 flex flex-col gap-4">
-                  <CardTitle className="text-white text-[32px] lg:text-[22px] 2xl:text-[32px] hover:text-white/70 transition-colors duration-300 font-semibold">{plan.name}</CardTitle>
+                  <CardTitle className="text-white text-[25px] xs:text-[32px] sm:text-[32px] lg:text-[22px] 2xl:text-[32px] hover:text-white/70 transition-colors duration-300 font-semibold">{plan.name}</CardTitle>
                   <CardDescription className="text-white/50 hover:text-white/70 transition-colors duration-300 text-[16px] lg:text-[12px] 2xl:text-[16px] font-normal">
                     {plan.description}
                   </CardDescription>
                   <div className="pt-4">
-                    <span className="text-white hover:text-white/70 transition-colors duration-300 text-[40px] lg:text-[29px] 2xl:text-[40px] font-normal flex gap-2.5">
+                    <span className="text-white hover:text-white/70 transition-colors duration-300 text-[25px] xs:text-[40px] sm:text-[40px] lg:text-[29px] 2xl:text-[40px] font-normal flex gap-2.5">
                       {plan.price.amount}
                       <sup className="text-zinc-400 text-sm lg:text-[10px] 2xl:text-sm font-normal">{plan.price.period}</sup>
                     </span>

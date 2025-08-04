@@ -28,7 +28,7 @@ export default function TrustedBySection() {
   ];
 
   return (
-    <FadeIn direction="up" distance={20} duration={0.6} className="px-8 md:py-[64px] py-[83px] w-full flex items-center justify-center overflow-hidden">
+    <FadeIn direction="up" distance={20} duration={0.6} className=" md:py-[64px] py-[83px] w-full flex items-center justify-center overflow-hidden">
       <div className="container">
         <FadeIn direction="up" delay={0.2} duration={0.5}>
           <h3 className="font-[400] text-center text-[16px] leading-[100%] text-white mb-12">Trusted by top-tier banks and fintechs</h3>
@@ -37,7 +37,7 @@ export default function TrustedBySection() {
         {/* Container with hidden overflow */}
         <div className="relative w-full overflow-hidden">
           {/* Animated logos container */}
-          <div className="flex items-center gap-[20px] md:gap-[32px] lg:gap-[50px] 2xl:gap-[100px] animate-scroll">
+          <div className="flex items-center gap-[10px] x360:gap-[20px] md:gap-[32px] lg:gap-[50px] 2xl:gap-[100px] animate-scroll">
             {/* First set of logos */}
             {logos.map((logo, index) => (
               <HoverCard key={`first-${index}`} hoverScale={1.1}>
